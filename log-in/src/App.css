@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.App {
+    margin: 8% 10%;
+    background: #13232f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.tabs {
+    margin-top: 10%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: content-box;
+    outline: none;
+    background: rgba(132, 129, 129, 0.531);
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    word-spacing: 1px;
+    color: #c3bebe45;
+    width: 80%;
+}
+
+.active-tabs {
+    color: #fff;
+    background: rgba(9, 210, 177, 0.561);
+    border-bottom: 1px transparent;
+}
+
+.content {
+    height: 100%;
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+form {
+    background: rgba( #13232f, .5);
+    padding: 40px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba( #13232f, .3);
+}
+
+h1 {
+    text-align: center;
+    color: #ffff;
+    font-weight: 300;
+    margin: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: #1ab188;
+    color: #ffffff;
+    transition: all.5s ease;
+    -webkit-appearance: none;
+}
+
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 0;
+    margin: 30px 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input:focus {
+    border-color: #1ab188;
+    border: 3px solid;
+}
+
+button :hover,
+:focus {
+    background: darken( #1ab188, 5%);
+}
+
+p {
+    color: #1a7188;
+    float: right;
+    font-size: 12px;
+}
+
+p:hover {
+    color: #ff5;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bloc-tabs {
+    display: flex;
+    margin: 0 30%;
+}
+
+@media(max-width:700px) {
+    .App {
+        margin: 1% 1% !important;
+    }
+    .bloc-tabs {
+        margin: 0 10%;
+    }
+}
